@@ -1,15 +1,12 @@
 <?php
 /**
- * The main template file.
- *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
+ * The template for displaying categories results pages.
  *
  */
 
 get_header(); 
+
+
 
 $class_row = "col-md-9";
 if ( cryptic_redux('mt_blog_layout') == 'mt_blog_fullwidth' ) {
@@ -19,7 +16,8 @@ if ( cryptic_redux('mt_blog_layout') == 'mt_blog_fullwidth' ) {
 }
 $sidebar = cryptic_redux('mt_blog_layout_sidebar');
 
-// theme_ini
+
+// Theme Init
 $theme_init = new cryptic_init_class;
 ?>
 
